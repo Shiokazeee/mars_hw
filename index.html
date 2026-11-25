@@ -5,7 +5,7 @@
 		<title>Экспедиция на Марс</title>
 		<link
 			rel="stylesheet"
-			href=""
+			href="style.css"
 		/>
 	</head>
 	<body>
@@ -17,32 +17,35 @@
 			</p>
 			<p>
 				Дата запуска:
-				<span style="color: red">05/22/2028</span>
+				<span class="launch-date">05/22/2028</span>
 			</p>
 			<p>«Через знания — к новым мирам!»</p>
 			<hr />
 		</header>
 
-		<nav>
-			<ul>
-				<li><a href="#parameters">Об экспедиции</a></li>
-				<li><a href="#crew">Экипаж</a></li>
-				<li><a href="#tasks">Задачи</a></li>
-				<li><a href="#plan">План полета</a></li>
-				<li><a href="#photo">Фотографии</a></li>
-				<li><a href="#space-tech">Космическая техника</a></li>
-				<li><a href="#requirements">Требования к кандидатам</a></li>
-				<li><a href="#application">Подать заявку</a></li>
-				<li><a href="#contacts">Контакты</a></li>
-			</ul>
-		</nav>
-
 		<main>
-			<section id="parameters">
+			<nav>
+				<ul>
+					<li><a href="#parameters">Об экспедиции</a></li>
+					<li><a href="#crew">Экипаж</a></li>
+					<li><a href="#tasks">Задачи</a></li>
+					<li><a href="#plan">План полета</a></li>
+					<li><a href="#photo">Фотографии</a></li>
+					<li><a href="#space-tech">Космическая техника</a></li>
+					<li><a href="#requirements">Требования к кандидатам</a></li>
+					<li><a href="#application">Подать заявку</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+
+			<section
+				class="card"
+				id="parameters"
+			>
 				<h2>Параметры экспедиции</h2>
 				<p>
 					Дата запуска:
-					<span style="color: red">05/22/2028</span>
+					<span class="launch-date">05/22/2028</span>
 				</p>
 				<p>
 					Продолжительность полёта:
@@ -57,7 +60,10 @@
 				<p>Предполагаемая дата возвращения: 05/22/2031</p>
 			</section>
 
-			<section id="crew">
+			<section
+				class="card"
+				id="crew"
+			>
 				<h2>Состав экипажа</h2>
 				<table>
 					<tr>
@@ -110,7 +116,10 @@
 				</table>
 			</section>
 
-			<section id="tasks">
+			<section
+				class="card"
+				id="tasks"
+			>
 				<h2>Задачи экспедиции</h2>
 				<p>
 					Главная цель миссии — развёртывание базового лагеря, проверка систем
@@ -130,7 +139,7 @@
 						панели станции.
 					</li>
 					<li>
-						<span style="color: red">
+						<span class="important-note">
 							Протестировать стабильность радиосвязи и передачу телеметрии между
 							Марсом и Землёй
 						</span>
@@ -158,7 +167,10 @@
 				</ul>
 			</section>
 
-			<section id="plan">
+			<section
+				class="card"
+				id="plan"
+			>
 				<h2>План экспедиции</h2>
 				<table>
 					<tr>
@@ -230,7 +242,10 @@
 				</table>
 			</section>
 
-			<section id="photo">
+			<section
+				class="card"
+				id="photo"
+			>
 				<h2>Фотографии экспедиции</h2>
 				<div>
 					<img
@@ -248,7 +263,10 @@
 				</div>
 			</section>
 
-			<section id="space-tech">
+			<section
+				class="card"
+				id="space-tech"
+			>
 				<h2>Космическая техника</h2>
 				<p>
 					Основные аппараты и модули, используемые в рамках текущей космической
@@ -300,7 +318,10 @@
 				</table>
 			</section>
 
-			<section id="requirements">
+			<section
+				class="card"
+				id="requirements"
+			>
 				<h2>Кого возьмут в экспедицию</h2>
 				<p>
 					Для участия в экспедиции на Марс будут отобраны кандидаты, которые
@@ -311,7 +332,7 @@
 					<li>Иметь высшее техническое или медицинское образование.</li>
 					<li>Обладать хорошей физической подготовкой и крепким здоровьем.</li>
 					<li>
-						<span style="color: red">
+						<span class="important-note">
 							Уметь сохранять спокойствие и принимать решения в экстремальных
 							ситуациях.
 						</span>
@@ -363,7 +384,10 @@
 				</table>
 			</section>
 
-			<section id="application">
+			<section
+				class="card"
+				id="application"
+			>
 				<h2>Заявка на участие в экспедиции</h2>
 				<p>
 					Заполните форму ниже, чтобы присоединиться к нашей команде
@@ -450,7 +474,12 @@
 							value="yes"
 							required
 						/>
-						<label for="yes">Да</label>
+						<label
+							class="option"
+							for="yes"
+						>
+							Да
+						</label>
 
 						<input
 							type="radio"
@@ -458,7 +487,12 @@
 							name="experience"
 							value="no"
 						/>
-						<label for="no">Нет</label>
+						<label
+							class="option"
+							for="no"
+						>
+							Нет
+						</label>
 					</div>
 
 					<div>
@@ -470,7 +504,12 @@
 							value="leader"
 							required
 						/>
-						<label for="leader">Руководитель команды</label>
+						<label
+							class="option"
+							for="leader"
+						>
+							Руководитель команды
+						</label>
 
 						<input
 							type="radio"
@@ -478,7 +517,12 @@
 							name="role"
 							value="technical"
 						/>
-						<label for="technical">Технический специалист</label>
+						<label
+							class="option"
+							for="technical"
+						>
+							Технический специалист
+						</label>
 
 						<input
 							type="radio"
@@ -486,7 +530,12 @@
 							name="role"
 							value="researcher"
 						/>
-						<label for="researcher">Исследователь</label>
+						<label
+							class="option"
+							for="researcher"
+						>
+							Исследователь
+						</label>
 
 						<input
 							type="radio"
@@ -494,7 +543,12 @@
 							name="role"
 							value="medic"
 						/>
-						<label for="medic">Медицинский специалист</label>
+						<label
+							class="option"
+							for="medic"
+						>
+							Медицинский специалист
+						</label>
 					</div>
 
 					<div>
@@ -505,7 +559,12 @@
 							name="skill"
 							value="control_ship"
 						/>
-						<label for="control_ship">Управление кораблём</label>
+						<label
+							class="option"
+							for="control_ship"
+						>
+							Управление кораблём
+						</label>
 
 						<input
 							type="checkbox"
@@ -513,7 +572,12 @@
 							name="skill"
 							value="repair"
 						/>
-						<label for="repair">Ремонт оборудования</label>
+						<label
+							class="option"
+							for="repair"
+						>
+							Ремонт оборудования
+						</label>
 
 						<input
 							type="checkbox"
@@ -521,7 +585,12 @@
 							name="skill"
 							value="first_aid"
 						/>
-						<label for="first_aid">Первая помощь</label>
+						<label
+							class="option"
+							for="first_aid"
+						>
+							Первая помощь
+						</label>
 
 						<input
 							type="checkbox"
@@ -529,7 +598,12 @@
 							name="skill"
 							value="programming"
 						/>
-						<label for="programming">Программирование</label>
+						<label
+							class="option"
+							for="programming"
+						>
+							Программирование
+						</label>
 
 						<input
 							type="checkbox"
@@ -537,7 +611,12 @@
 							name="skill"
 							value="research"
 						/>
-						<label for="research">Научные исследования</label>
+						<label
+							class="option"
+							for="research"
+						>
+							Научные исследования
+						</label>
 
 						<input
 							type="checkbox"
@@ -545,7 +624,12 @@
 							name="skill"
 							value="language"
 						/>
-						<label for="language">Иностранные языки</label>
+						<label
+							class="option"
+							for="language"
+						>
+							Иностранные языки
+						</label>
 					</div>
 
 					<div>
@@ -594,7 +678,10 @@
 							value="approved_med"
 							required
 						/>
-						<label for="approved_med">
+						<label
+							class="option"
+							for="approved_med"
+						>
 							Я согласен пройти медицинское обследование
 						</label>
 
@@ -605,9 +692,23 @@
 							value="approved_rules"
 							required
 						/>
-						<label for="approved_rules">
+						<label
+							class="option"
+							for="approved_rules"
+						>
 							<a href="#requirements">Я ознакомился с правилами экспедиции</a>
 						</label>
+					</div>
+
+					<div class="application-hint">
+						<h3>Перед отправкой заявки</h3>
+						<p>
+							Обязательно перепроверьте актуальность указанных контактных
+							данных: адреса электронной почты и номера телефона. Убедитесь, что
+							в них нет опечаток и указан действующий номер, чтобы штаб
+							экспедиции смог оперативно связаться с вами после рассмотрения
+							заявки.
+						</p>
 					</div>
 
 					<button type="submit">Отправить заявку</button>
